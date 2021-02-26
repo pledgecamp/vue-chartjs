@@ -1,15 +1,16 @@
 import Chart from 'chart.js'
+import { h } from 'vue'
 
 export function generateChart (chartId, chartType) {
   return {
-    render: function (createElement) {
-      return createElement(
+    render: function () {
+      return h(
         'div', {
           style: this.styles,
           class: this.cssClasses
         },
         [
-          createElement(
+          h(
             'canvas', {
               attrs: {
                 id: this.chartId,
@@ -80,7 +81,7 @@ export function generateChart (chartId, chartType) {
         )
       }
     },
-    beforeDestroy () {
+    beforeUnmount () {
       if (this.$data._chart) {
         this.$data._chart.destroy()
       }

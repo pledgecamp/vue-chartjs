@@ -1,30 +1,20 @@
 {
-  "name": "vue-chartjs",
-  "version": "3.5.1",
+  "name": "@pledgecamp/vue3-chartjs",
+  "version": "4.0.2",
   "description": "Vue.js wrapper for chart.js for creating beautiful charts.",
   "author": "Jakub Juszczak <jakub@posteo.de>",
   "homepage": "http://vue-chartjs.org",
   "license": "MIT",
   "contributors": [
-    {
-      "name": "Thorsten Lünborg",
-      "web": "https://github.com/LinusBorg"
-    },
-    {
-      "name": "Juan Carlos Alonso",
-      "web": "https://github.com/jcalonso"
-    }
+    "Thorsten Lünborg (https://github.com/LinusBorg)",
+    "Juan Carlos Alonso (https://github.com/jcalonso)"
   ],
   "maintainers": [
-    {
-      "name": "Jakub Juszczak",
-      "email": "jakub@posteo.de",
-      "web": "http://www.jakubjuszczak.de"
-    }
+    "Jakub Juszczak <jakub@posteo.de> (http://www.jakubjuszczak.de)"
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:apertureless/vue-chartjs.git"
+    "url": "git+ssh://git@github.com/apertureless/vue-chartjs.git"
   },
   "bugs": {
     "url": "https://github.com/apertureless/vue-chartjs/issues"
@@ -43,8 +33,8 @@
   "module": "./dist/vue-chartjs.es.js",
   "exports": {
     ".": {
-      "import": "./dist/solomon-plugin.es.js",
-      "require": "./dist/solomon-plugin.umd.js"
+      "import": "./dist/vue-chartjs.es.js",
+      "require": "./dist/vue-chartjs.umd.js"
     }
   },
   "unpkg": "dist/vue-chartjs.min.js",
@@ -57,7 +47,7 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
-    "prepublishOnly": "npm run lint && npm run test && npm run build",
+    "release": "npm run lint && npm run test && npm run build",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },

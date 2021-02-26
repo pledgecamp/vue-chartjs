@@ -1,6 +1,6 @@
 {
   "name": "@pledgecamp/vue3-chartjs",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "Vue.js wrapper for chart.js for creating beautiful charts.",
   "author": "Jakub Juszczak <jakub@posteo.de>",
   "homepage": "http://vue-chartjs.org",
@@ -29,16 +29,15 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/vue-chartjs.umd.js",
-  "module": "./dist/vue-chartjs.es.js",
+  "main": "./dist/vue3-chartjs.umd.js",
+  "module": "./dist/vue3-chartjs.es.js",
   "exports": {
     ".": {
-      "import": "./dist/vue-chartjs.es.js",
-      "require": "./dist/vue-chartjs.umd.js"
+      "import": "./dist/vue3-chartjs.es.js",
+      "require": "./dist/vue3-chartjs.umd.js"
     }
   },
-  "unpkg": "dist/vue-chartjs.min.js",
-  "jsnext:main": "es/index.js",
+  "unpkg": "dist/vue3-chartjs.umd.js",
   "typings": "types/index.d.ts",
   "scripts": {
     "dev": "vite serve",

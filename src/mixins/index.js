@@ -110,5 +110,6 @@ export const reactiveProp = {
 
 export default {
   reactiveData,
-  reactiveProp
+  reactiveProp,
+  emits
 }

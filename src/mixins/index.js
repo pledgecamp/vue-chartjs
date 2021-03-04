@@ -72,6 +72,15 @@ function dataHandler (newData, oldData) {
   }
 }
 
+const emits = [
+  'labels:update',
+  'labels:xupdate',
+  'labels:yupdate',
+  'chart:destroy',
+  'chart:render',
+  'chart:update'
+]
+
 export const reactiveData = {
   data () {
     return {
@@ -85,6 +94,7 @@ export const reactiveData = {
 }
 
 export const reactiveProp = {
+  emits,
   props: {
     chartData: {
       type: Object,

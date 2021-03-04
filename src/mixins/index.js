@@ -82,6 +82,7 @@ const emits = [
 ]
 
 export const reactiveData = {
+  emits,
   data () {
     return {
       chartData: null
